@@ -696,6 +696,8 @@ virtual_uid_maps = static:5000
 virtual_gid_maps = static:5000
 virtual_alias_maps = hash:/etc/postfix/virtual
 
+maillog_file = /dev/stdout
+
 smtpd_client_connection_count_limit = 50
 smtpd_client_message_rate_limit = 50
 smtpd_client_recipient_rate_limit = 50
