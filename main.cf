@@ -727,8 +727,8 @@ smtpd_sender_restrictions =
   reject_unverified_sender
 
 smtpd_recipient_restrictions =
-	permit_auth_destination,
-	reject
+  permit_auth_destination,
+  reject
 
 strict_rfc821_envelopes = yes
 
