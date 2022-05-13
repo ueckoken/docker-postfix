@@ -340,7 +340,7 @@ mynetworks = 127.0.0.0/8
 #relayhost = [an.ip.add.ress]
 
 # see: https://www.cc.uec.ac.jp/tech/mail_server.html#settings_postfix
-relayhost = [mx.uec.ac.jp]
+relayhost = mx.uec.ac.jp
 
 # REJECTING UNKNOWN RELAY USERS
 #
