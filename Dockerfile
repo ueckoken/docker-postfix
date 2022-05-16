@@ -6,4 +6,4 @@ COPY main.cf master.cf virtual /etc/postfix/
 RUN postmap /etc/postfix/virtual
 RUN postfix check
 EXPOSE 25/tcp
-CMD ["postfix", "start-fg"]
+CMD /usr/lib/postfix/configure-instance.sh && postfix start-fg
