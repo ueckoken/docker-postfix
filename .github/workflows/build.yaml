@@ -43,7 +43,7 @@ jobs:
         run: echo "::set-output name=tag::$(echo ${{ github.sha }} | cut -c1-7)-$(date +%s)"
 
       - name: Build
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v5
         with:
           context: ./
           platforms: linux/amd64
